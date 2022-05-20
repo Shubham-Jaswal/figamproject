@@ -17,7 +17,7 @@ class _ChoosepageState extends State<Choosepage> {
 
     SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: []);
     return Scaffold(
-      backgroundColor: Color(0xffFFD233),
+      backgroundColor: Colors.yellow[700],
       body: Container(
         width: double.infinity,
         height: double.infinity,

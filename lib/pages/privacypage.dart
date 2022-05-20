@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Privacypage extends StatefulWidget {
@@ -13,7 +14,7 @@ class _PrivacypageState extends State<Privacypage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffFFD233),
+      backgroundColor: Colors.yellow[700],
       body: Container(
         padding: EdgeInsets.only(top: 70,left: 30),
         child: Column(
@@ -38,7 +39,9 @@ class _PrivacypageState extends State<Privacypage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Fluttertoast.showToast(msg: 'Bas Bhai',toastLength: Toast.LENGTH_SHORT);
+                    },
                     child: Text('I agree'),
                     style: ElevatedButton.styleFrom(
                       fixedSize: Size(300, 60),

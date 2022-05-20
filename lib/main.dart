@@ -11,7 +11,7 @@ import 'package:flutter/material.dart';
 void main() {
   runApp( MaterialApp(
     debugShowCheckedModeBanner: false,
-   // initialRoute: '/2',
+    initialRoute: '/',
     routes: {
       '/': (context) => const Firstpage(),
       '/2': (context) => const Seconpage(),

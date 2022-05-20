@@ -17,7 +17,7 @@ class _GenderselectState extends State<Genderselect> {
   Widget build(BuildContext context) {
     SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: []);
     return Scaffold(
-      backgroundColor: Color(0xffFFD233),
+      backgroundColor: Colors.yellow[700],
       body: Container(
         padding: EdgeInsets.only(top: 70, right: 30, left: 30),
         child: Column(
@@ -112,7 +112,8 @@ class _GenderselectState extends State<Genderselect> {
                       fixedSize: Size(300, 60),
                       shape: StadiumBorder(),
                         primary: Color(0xffFFFFFF).withOpacity(0.3),
-                        onPrimary: Color(0xffEAA800),  elevation: 0,
+                        onPrimary: Color(0xffEAA800),
+                      elevation: 0
                     ),
                   )
                 ],

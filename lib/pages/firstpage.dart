@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter/services.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 class Firstpage extends StatefulWidget {
 
@@ -64,7 +65,10 @@ bool _ispressed=false;
                         ),
                         SizedBox(height: 30,),
                         ElevatedButton(
-                          onPressed: (){},
+                          onPressed: (){
+                            Fluttertoast.showToast(msg: ('Not activated yet!!!'),backgroundColor: Colors.red,textColor: Colors.red,
+                            toastLength: Toast.LENGTH_LONG);
+                          },
                           child: Text('Log in'),
                           style: ElevatedButton.styleFrom(
                             primary: Colors.yellow[700],

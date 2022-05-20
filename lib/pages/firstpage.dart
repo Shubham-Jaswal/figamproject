@@ -13,6 +13,7 @@ class Firstpage extends StatefulWidget {
 
 class _FirstpageState extends State<Firstpage> {
 
+bool _ispressed=false;
   @override
   Widget build(BuildContext context) {
     SystemChrome.setEnabledSystemUIMode (SystemUiMode.manual, overlays: []);
@@ -32,7 +33,7 @@ class _FirstpageState extends State<Firstpage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text('Welocme to',style: TextStyle(fontSize: 15),),
+              Text('Welocme to,',style: TextStyle(fontSize: 15),),
               Text('Study With',style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold),),
               SizedBox(height: 30,),
 
@@ -45,12 +46,20 @@ class _FirstpageState extends State<Firstpage> {
 
                       children: [
                         ElevatedButton(
-                          onPressed: (){},
+                          onPressed: (){
+                            print('ok');
+                            setState((){
+                              _ispressed=!_ispressed;
+                              Navigator.pushNamed(context, '/2');
+                            });
+                          },
                           child: Text('Create an Account'),
                           style: ElevatedButton.styleFrom(
                             primary: Colors.black,
-                            fixedSize: Size(250,60),
+                            onPrimary: Colors.white,
+                            fixedSize: Size(300,60),
                             shape: StadiumBorder(),
+                            elevation: 0,
                           ),
                         ),
                         SizedBox(height: 30,),

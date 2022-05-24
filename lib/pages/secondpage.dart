@@ -12,12 +12,12 @@ class Seconpage extends StatefulWidget {
 }
 
 class _SeconpageState extends State<Seconpage> {
- Color changecolor=Color(0xffFFFFFF).withOpacity(0.3);
- Color textchangecolor= Color(0xffEAA800);
- bool isSelected=false;
- bool isempty=false;
- String errortext=('ok');
- TextEditingController userNameController = TextEditingController();
+  Color changecolor = Color(0xffFFFFFF).withOpacity(0.3);
+  Color textchangecolor = Color(0xffEAA800);
+  bool isSelected = false;
+  bool isempty = false;
+  String errortext = ('ok');
+  TextEditingController userNameController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +26,6 @@ class _SeconpageState extends State<Seconpage> {
       backgroundColor: Colors.yellow[700],
       body: Container(
         height: MediaQuery.of(context).size.height,
-
         padding: EdgeInsets.only(top: 40, left: 30, right: 30),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -52,22 +51,25 @@ class _SeconpageState extends State<Seconpage> {
             ),
             Container(
               height: 50,
-              child: TextField(controller: userNameController
-                ,onTap: () {
-                setState((){
-                  changecolor=isSelected?Color(0xffFFFFFF).withOpacity(0.3):Colors.black;
-                  textchangecolor=isSelected? Color(0xffEAA800):Colors.white;
-               //   errortext:isempty?(''):('Please');
-
-                });
-              },
+              child: TextField(
+                controller: userNameController,
+                onTap: () {
+                  setState(() {
+                    changecolor = isSelected
+                        ? Color(0xffFFFFFF).withOpacity(0.3)
+                        : Colors.black;
+                    textchangecolor =
+                        isSelected ? Color(0xffEAA800) : Colors.white;
+                    //   errortext:isempty?(''):('Please');
+                  });
+                },
                 decoration: InputDecoration(
                   contentPadding: EdgeInsets.only(left: 10, right: 5, top: 5),
                   fillColor: Colors.white,
                   filled: true,
                   hintText: ('Enter your student ID'),
                   //hintStyle: TextStyle(color: Colors.red),
-               //   errorText: (''),
+                  //   errorText: (''),
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10),
                       borderSide: BorderSide.none),
@@ -103,25 +105,27 @@ class _SeconpageState extends State<Seconpage> {
             ),
             Spacer(),
             Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.pushNamed(context,'/3');
-                    },
-                    child: Text('Next',),
-                    style: ElevatedButton.styleFrom(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/3');
+                  },
+                  child: Text(
+                    'Next',
+                  ),
+                  style: ElevatedButton.styleFrom(
                       elevation: 0,
                       fixedSize: Size(300, 60),
                       shape: StadiumBorder(),
-                      primary:changecolor,
-                      onPrimary: textchangecolor
-                    ),
-                  )
-                ],
-              ),
-            SizedBox(height: 30,)
-
+                      primary: changecolor,
+                      onPrimary: textchangecolor),
+                )
+              ],
+            ),
+            SizedBox(
+              height: 30,
+            )
           ],
         ),
       ),

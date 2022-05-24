@@ -17,7 +17,7 @@ class _FourthpageState extends State<Fourthpage> {
     return Scaffold(
         backgroundColor: Colors.yellow[700],
         body: Container(
-          padding: EdgeInsets.only(top: 70,right: 30,left: 30),
+          padding: EdgeInsets.only(top: 70, right: 30, left: 30),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -33,12 +33,19 @@ class _FourthpageState extends State<Fourthpage> {
                       minHeight: 5,
                     ),
                   ),
-
                 ],
               ),
-              SizedBox(height: 40,),
-              Text('What are you currently studying?',style: GoogleFonts.raleway(fontWeight: FontWeight.w500,fontSize: 24),),
-              SizedBox(height: 25,),
+              SizedBox(
+                height: 40,
+              ),
+              Text(
+                'What are you currently studying?',
+                style: GoogleFonts.raleway(
+                    fontWeight: FontWeight.w500, fontSize: 24),
+              ),
+              SizedBox(
+                height: 25,
+              ),
               Container(
                 height: 50,
                 child: TextField(
@@ -50,8 +57,6 @@ class _FourthpageState extends State<Fourthpage> {
                     border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
                         borderSide: BorderSide.none),
-
-
                   ),
                 ),
               ),
@@ -69,25 +74,16 @@ class _FourthpageState extends State<Fourthpage> {
                       style: ElevatedButton.styleFrom(
                         fixedSize: Size(300, 60),
                         shape: StadiumBorder(),
-                          primary: Color(0xffFFFFFF).withOpacity(0.3),
-                          onPrimary: Color(0xffEAA800),  elevation: 0,
+                        primary: Color(0xffFFFFFF).withOpacity(0.3),
+                        onPrimary: Color(0xffEAA800),
+                        elevation: 0,
                       ),
                     )
                   ],
                 ),
               )
-
-
-
-
-
             ],
-
           ),
-
-        )
-
-
-    );
+        ));
   }
 }

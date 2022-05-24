@@ -30,7 +30,7 @@ class _GenderselectState extends State<Genderselect> {
                   height: 5,
                   child: LinearProgressIndicator(
                     backgroundColor: Colors.yellow[800],
-                    value:1,
+                    value: 1,
                     valueColor: AlwaysStoppedAnimation(Colors.black),
                     minHeight: 5,
                   ),
@@ -40,7 +40,6 @@ class _GenderselectState extends State<Genderselect> {
             SizedBox(
               height: 40,
             ),
-
             Text(
               'How do you identify?',
               style: GoogleFonts.raleway(
@@ -109,12 +108,11 @@ class _GenderselectState extends State<Genderselect> {
                     },
                     child: Text('Next'),
                     style: ElevatedButton.styleFrom(
-                      fixedSize: Size(300, 60),
-                      shape: StadiumBorder(),
+                        fixedSize: Size(300, 60),
+                        shape: StadiumBorder(),
                         primary: Color(0xffFFFFFF).withOpacity(0.3),
                         onPrimary: Color(0xffEAA800),
-                      elevation: 0
-                    ),
+                        elevation: 0),
                   )
                 ],
               ),

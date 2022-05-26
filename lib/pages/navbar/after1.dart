@@ -1,3 +1,5 @@
+import 'package:figamproject/pages/StudyBuddy/sblocation.dart';
+import 'package:figamproject/pages/StudyBuddy/sblocation1.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -19,6 +21,7 @@ class _After1State extends State<After1> {
 
 
   List<Color> color=[Color(0xffD9C7E7),Color(0xffFF9A62)];
+  List pages=[SBlocation(),SBlocation1()];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -48,12 +51,13 @@ class _After1State extends State<After1> {
       child: ListView.builder(itemCount:2,itemBuilder: (context,index){
         return GestureDetector(
           onTap: (){
-           Navigator.pushNamed(context, '/14');
+           Navigator.pushNamed(context, ('/14'));
           },
           child: Container(padding:EdgeInsets.only(bottom: 20),
             height: 180,
             width: double.maxFinite,
             child: Card(
+
               elevation: 5,
               color: color[index],
               child: Container(

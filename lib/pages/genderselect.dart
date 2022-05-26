@@ -61,6 +61,7 @@ class _GenderselectState extends State<Genderselect> {
                     Text('Girl'),
                     Spacer(),
                     Radio(
+                      activeColor: Colors.yellow,
                       value: 1,
                       groupValue: _radioselected,
                       onChanged: (value) {
@@ -86,6 +87,7 @@ class _GenderselectState extends State<Genderselect> {
                     Text('Boy'),
                     Spacer(),
                     Radio(
+                      activeColor: Colors.yellow,
                       value: 2,
                       groupValue: _radioselected,
                       onChanged: (value) {

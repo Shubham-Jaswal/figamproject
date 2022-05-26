@@ -26,15 +26,19 @@ class _SBlocation1State extends State<SBlocation1> {
                 borderRadius: BorderRadius.circular(10),
               ),
 
-              child: Card(elevation: 4,
-                  child: Container(
-                      padding: EdgeInsets.only(left:10),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        children: [
-                          Text('Your current location',style: GoogleFonts.raleway(fontWeight: FontWeight.w400,fontSize: 14),),
-                        ],
-                      ))),),
+              child: GestureDetector(onTap: (){
+                Navigator.pushNamed(context, '/16');
+              },
+                child: Card(elevation: 4,
+                    child: Container(
+                        padding: EdgeInsets.only(left:10),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Text('Your current location',style: GoogleFonts.raleway(fontWeight: FontWeight.w400,fontSize: 14),),
+                          ],
+                        ))),
+              ),),
             SizedBox(height: 15,),
             Container(
               height: 55,

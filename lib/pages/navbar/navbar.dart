@@ -48,7 +48,7 @@ type: BottomNavigationBarType.fixed,
              label:'Discover',icon:Icon(Icons.directions)
            ),
            BottomNavigationBarItem(
-               label:'Resources',icon:Icon(Icons.search)
+               label:'Resources',icon:Icon(Icons.search),
            ),
            BottomNavigationBarItem(
                label:'Chat',icon:Icon(Icons.chat)

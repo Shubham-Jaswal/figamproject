@@ -1,4 +1,5 @@
 import 'package:figamproject/pages/StudyBuddy/mappage.dart';
+import 'package:figamproject/pages/StudyBuddy/paymentsuccess.dart';
 import 'package:figamproject/pages/StudyBuddy/paytutor.dart';
 import 'package:figamproject/pages/StudyBuddy/profile.dart';
 import 'package:figamproject/pages/StudyBuddy/sblocation1.dart';
@@ -20,7 +21,7 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
-    //initialRoute: '/17',
+   // initialRoute: '/12',
     routes: {
       '/': (context) => const Firstpage(),
       '/2': (context) => const Seconpage(),
@@ -40,6 +41,7 @@ void main() {
       '/16': (context) => const Mappage(),
       '/17': (context) => const Profile(),
       '/18': (context) => const Paytutor(),
+      '/19': (context) => const Paymentsuccess(),
     },
   ));
 }
